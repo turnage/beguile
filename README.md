@@ -1,1 +1,3 @@
 # beguile
+
+An HTTP proxy.
