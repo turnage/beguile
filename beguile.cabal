@@ -32,13 +32,15 @@ library
       src
   default-extensions: OverloadedStrings
   build-depends:
-      base >=4.7 && <5
+      async
+    , base >=4.7 && <5
     , binary
     , bytestring
+    , bytestring-conversion
     , conduit
     , conduit-extra
     , http-types
-    , text
+    , options
     , wai
     , wai-conduit
     , warp
@@ -53,14 +55,16 @@ executable beguile
   default-extensions: OverloadedStrings
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      async
+    , base >=4.7 && <5
     , beguile
     , binary
     , bytestring
+    , bytestring-conversion
     , conduit
     , conduit-extra
     , http-types
-    , text
+    , options
     , wai
     , wai-conduit
     , warp
@@ -76,14 +80,16 @@ test-suite beguile-test
   default-extensions: OverloadedStrings
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      async
+    , base >=4.7 && <5
     , beguile
     , binary
     , bytestring
+    , bytestring-conversion
     , conduit
     , conduit-extra
     , http-types
-    , text
+    , options
     , wai
     , wai-conduit
     , warp

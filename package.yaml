@@ -24,15 +24,17 @@ default-extensions:
 
 dependencies:
 - base >= 4.7 && < 5
+- options
+- async
 - wai
 - wai-conduit
 - conduit
 - conduit-extra
 - warp
-- text
 - binary
 - http-types
 - bytestring
+- bytestring-conversion
 
 library:
   source-dirs: src
